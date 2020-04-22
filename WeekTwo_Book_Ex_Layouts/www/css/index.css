@@ -1,0 +1,29 @@
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+#container {
+    margin: 0px;
+}
+#test {
+    background-color: red;
+    color: white;
+    width: 600px;
+    padding: 25px;
+    border: 25px solid black;
+    margin: 25px;
+    margin-top: 0px;
+    
+}
+#test2 {
+    background-color: blue;
+    color: white;
+    width: 483px
+}
+
+footer {
+    font-size: 0.75em;
+    background-color: black;
+    color: white;
+    clear: both; /*Used to make sure the footer is not affected by any floats set to other elements */
+}

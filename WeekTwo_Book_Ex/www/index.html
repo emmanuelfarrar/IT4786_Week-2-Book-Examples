@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script type="text/javascript" src="cordova.js"></script>
+    <!-- This was used in 2.1
+    <script type="text/javascript" src="js/main.js"></script>
+    -->
+    <!-- 2.2-->
+    <!--Onload get button and addEventListener that on click calls change function -->
+    <script type="application/javascript">
+        window.onload = function(){
+            document.getElementById("btnMove").addEventListener("click", change, false);
+            document.getElementById("btnPage3").addEventListener("click", change2, false);
+            document.getElementById("btnPage4").addEventListener("click", change3, false);
+            document.getElementById("btnPage5").addEventListener("click", change4, false);
+        }
+
+        function change() {
+            window.location = "secondPage.html";
+        }
+        function change2() {
+            window.location = "thirdPage.html";
+        }
+        function change3() {
+            window.location = "fourthPage.html";
+        }
+        function change4() {
+            window.location = "fifthPage.html";
+        }
+
+    </script>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"  />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+   <!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />--> 
+
+    <title>Hello World</title>
+</head>
+
+<body>
+    <div id="container">   
+        <button id="btnMove">G to Page 2</button>
+        <button id="btnPage3">Go to Dynamic Page Example</button>
+        <button id="btnPage4">Form Page</button>
+        <button id="btnPage5">Image Example</button>
+    </div>
+</body>
+</html>

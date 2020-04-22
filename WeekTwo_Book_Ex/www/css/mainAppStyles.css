@@ -1,0 +1,8 @@
+#container {
+    margin: 5px;
+}
+
+#airplane {
+    width: 100%;
+    max-width: 640px;
+}
